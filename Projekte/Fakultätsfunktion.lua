@@ -1,7 +1,8 @@
 -- definiert eine Fakultätsfunktion
 function fact (n)
   if 0 > n then
-    return (-1*n) * fact(n-1)
+    n = -1*n
+    return (n) * fact(n-1)
   elseif n == 0 then
     return 1
   else
