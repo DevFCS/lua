@@ -1,6 +1,8 @@
 print(" Checks if f(x) is Zero in the domain of definition")
 print("Function:")
-local fx = tonumber(io.read()) 
+local fx = io.read()
+prntfunc = function (x) 
+ return fx end
 print(fx, type(fx))
 print("Start value: ")
 local startvalue = tonumber(io.read()) or -5
