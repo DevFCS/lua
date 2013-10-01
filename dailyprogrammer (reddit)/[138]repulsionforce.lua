@@ -1,12 +1,7 @@
-#!/usr/local/bin/lua
 local f = io.open("input.txt", "r")
-local i = 0
 for line in io.lines("input.txt") do
-  i = i + 1  
-  local mass, xpos, ypos = f:read("*number", "*number","*number")
-  if not mass then break end
-  if i == 1 then a = {mass, xpos, ypos} 
-  else b = {mass, xpos, ypos} end
-  for k,v in pairs(a) do print(k,v) end 
-  for k,v in pairs(b) do print(k,v) end
-end
+  local mass1, xpos1, ypos1, mass2, xpos2, ypos2 = f.read("*number","*number","*number","*number","*number","*number")
+  if not mass1 then break end
+  local force = (mass1 * mass2)/(math.sqrt((xpos1 - xpos2)^2 + (ypos1 - ypos2)^2))^2  
+  print("Answer: " .. force)
+end 
