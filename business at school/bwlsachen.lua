@@ -1,4 +1,3 @@
-#!/usr/local/bin/lua
 --[[ bwlsachen.lua
 !V2 ist erschienen.
 Dies suboptimales BWLscript bestimmt:
