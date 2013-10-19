@@ -1,5 +1,4 @@
 --[[ [138]repulsionforce.lua
-!!DOESNT WORK, WILL BE REWORKED!!
 This program computes the repulsion force for two electrons in 2D space. It assumes that the two particles have the same mass and charge. Note that Colomb's Law uses a constant, but I choose to omit that for the simplicity.
 
 Sample Input (takes input from "input.txt"):
@@ -12,9 +11,11 @@ Sample Output:
 Taken from http://www.reddit.com/r/dailyprogrammer/comments/1ml669/091713_challenge_138_easy_repulsionforce/
 --]]
 local f = io.open("input.txt", "r")
-for line in io.lines("input.txt") do
-  local mass1, xpos1, ypos1, mass2, xpos2, ypos2 = f.read("*number","*number","*number","*number","*number","*number")
-  if not mass1 then break end
-  local force = (mass1 * mass2)/(math.sqrt((xpos1 - xpos2)^2 + (ypos1 - ypos2)^2))^2  
-  print("Answer: " .. force)
-end 
+local a = {}
+for line in f:lines() do
+  for i in string.gmatch(line, "%S+") do a[#a+1]=i end
+  if not a[6] then goto continue end
+  ::continue::
+end
+local force = (a[1] * a[4])/(math.sqrt((a[2] - a[5])^2 + (a[3] - a[6])^2))^2
+print("Answer: " .. force)
