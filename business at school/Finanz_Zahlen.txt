@@ -53,7 +53,7 @@ Eigenkapitalquote: 30.778178998134
 
 
 
-Jahr: 20120101
+Jahr: 2012 Quartal 1
 ----
 
 ROS: 13.789808917197
@@ -64,7 +64,7 @@ Eigenkapitalquote: 40.5253163547
 
 
 
-Jahr: 20120102
+Jahr: 2012 Quartal 2
 ----
 
 ROS: 9.3967257232563
@@ -75,7 +75,7 @@ Eigenkapitalquote: 70.221677684067
 
 
 
-Jahr: 20120203
+Jahr: 2012 Quartal 3
 ----
 
 ROS: 8.0299908424908
@@ -97,7 +97,7 @@ Eigenkapitalquote: 35.030281529534
 
 
 
-Jahr: 20130101
+Jahr: 2013 Quartal 1
 ----
 
 ROS: 10.988955314622
@@ -108,7 +108,7 @@ Eigenkapitalquote: 39.886722905647
 
 
 
-Jahr: 20130102
+Jahr: 2013 Quartal 2
 ----
 
 ROS: 9.6605459597886
@@ -119,7 +119,7 @@ Eigenkapitalquote: 71.616546506209
 
 
 
-Jahr: 20130203
+Jahr: 2013 Quartal 3
 ----
 
 ROS: 9.4851406981334
