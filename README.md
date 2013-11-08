@@ -1,1 +1,2 @@
-lerning lua, this repo is just to keep track of my stuff
+This is my repo to keep track of my coding. I am mainly working with 
+lua. 
