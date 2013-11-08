@@ -32,5 +32,4 @@ table.insert(csv, 1, "Jahre;Gesamtvermoegen;EBIT;Jahresueberschuss;Eigenkapital;
 data = table.concat(csv, "\n")
 out:write(data)
 assert(out:close())
-print(table.concat(csv, "\n"))
-  
+
