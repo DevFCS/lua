@@ -4,22 +4,22 @@ You're challenge for today is to create a program that can calculate pi accurate
 Try not to cheat :)
 --]]
 output = io.open("test", "w")
---local tropfenzahl = 100000000000000000
-local tropfenzahl = 1000
-local innerhalb = 0
-local gesamt= tropfenzahl
+local drops = 100000000000000000
+local inside = 0
+local all = drops
 math.randomseed(os.time())
-while tropfenzahl > 0 do
-	print(tropfenzahl)
+while drops > 0 do
 	dotx = math.random()
 	doty = math.random()
-	if (dotx*dotx + doty*doty <= 1) then
-		innerhalb = innerhalb + 1
+	if (dotx * dotx + doty * doty <= 1) then
+		inside = inside + 1
 	end
-	tropfenzahl = tropfenzahl - 1
+	drops = drops - 1
 end
-pi = 4*innerhalb/gesamt
+pi = 4 * inside / all
 print(pi)
 output:write(pi)
 output:close()
-
+--[[
+Notice: drops needs to be huge, which causes a long processing time
+]]

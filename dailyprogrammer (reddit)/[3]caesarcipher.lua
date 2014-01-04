@@ -9,6 +9,9 @@ local a = {}
 local function encode(x)
     for char in string.gmatch(x, "%a") do
 	    local encrypted = string.byte(char) + offset
+	    while encrypted > 122 do
+	    	encrypted = encrypted - 26
+	    end
 	    a[#a+1] = string.char(encrypted)
 	end
     return table.concat(a) 
