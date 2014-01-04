@@ -12,6 +12,9 @@ local function encode(x)
 	    while encrypted > 122 do
 	    	encrypted = encrypted - 26
 	    end
+	    while encrypted < 97 do
+	    	encrypted = encrypted + 26
+	    end
 	    a[#a+1] = string.char(encrypted)
 	end
     return table.concat(a) 

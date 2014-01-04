@@ -3,23 +3,5 @@ You're challenge for today is to create a program that can calculate pi accurate
 
 Try not to cheat :)
 --]]
-output = io.open("test", "w")
-local drops = 100000000000000000
-local inside = 0
-local all = drops
-math.randomseed(os.time())
-while drops > 0 do
-	dotx = math.random()
-	doty = math.random()
-	if (dotx * dotx + doty * doty <= 1) then
-		inside = inside + 1
-	end
-	drops = drops - 1
-end
-pi = 4 * inside / all
-print(pi)
-output:write(pi)
-output:close()
---[[
-Notice: drops needs to be huge, which causes a long processing time
-]]
+local pi = 4 * math.atan(1/5) - math.atan(1/239)
+print(string.format("%.30f", pi * 4))
