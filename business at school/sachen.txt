@@ -1,0 +1,35 @@
+Executing the program....
+$lua main.lua 
+
+Jahr: 2011
+----
+
+Gesamtvermögen:3835
+EBIT:605
+Jahresüberschuss:355
+Eigenkapital:1118
+Umsatzerlöse:8158
+ROS: 7.4160333415053
+Kapitalumschlagshaeufigkeit: 2.1272490221643
+ROI: 15.775749674055
+ROE: 31.75313059034
+Eigenkapitalquote: 29.152542372881
+
+
+
+Jahr: 2012
+----
+
+Gesamtvermögen:3428
+EBIT:536
+Jahresüberschuss:316
+Eigenkapital:1242
+Umsatzerlöse:8593
+ROS: 6.2376352845339
+Kapitalumschlagshaeufigkeit: 2.5067094515753
+ROI: 15.635939323221
+ROE: 25.442834138486
+Eigenkapitalquote: 36.231038506418
+
+
+
