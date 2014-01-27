@@ -17,6 +17,8 @@ local function morse(x)
 end
 local function demorse(x)
      local demorsed = string.gsub(x, "%S+", reversemorsealphabet)
+     local demorsed = string.gsub(demorsed, "(%a)%s(%a)%s", "%1%2")
+     local demorsed = string.gsub(demorsed, "%s+", " ")
      return demorsed
 end
 
@@ -26,10 +28,12 @@ if string.lower(input) == "m" then do
       print("What do you want to morse:")
       input2 = io.read()
       print(morse(input2))
+end
 elseif string.lower(input) == "d" then do
       print("What do you want to demorse:")
       input2 = io.read()
       print(demorse(input2))
+end
 else 
-      print("Invalid character. Please enter "m" to morse or "d" to demorse")
+      print("Invalid character. Please enter 'm' to morse or 'd' to demorse")
 end
